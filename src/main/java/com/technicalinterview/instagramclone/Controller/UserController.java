@@ -23,6 +23,7 @@ public class UserController {
 
 	@PostMapping("")
 	private Users submitUser(@RequestBody Users users) {
+		System.out.println("Hue Hue");
 		return userService.submitMetaDataOfUser(users);
 	}
 	
